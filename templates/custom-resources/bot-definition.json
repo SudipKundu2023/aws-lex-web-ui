@@ -18,16 +18,16 @@
         }
       ]
     },
-    "description": "Bot to order flowers on the behalf of a user",
+    "description": "Bot to order Food on the behalf of a user",
     "idleSessionTTLInSeconds": 600,
     "intents": [
       {
-        "intentName": "OrderFlowers",
+        "intentName": "OrderFood",
         "intentVersion": "$LATEST"
       }
     ],
     "locale": "en-US",
-    "name": "OrderFlowers",
+    "name": "OrderFood",
     "voiceId": "Salli"
   },
   "intents": [
@@ -54,11 +54,11 @@
           }
         ]
       },
-      "description": "Intent to order a bouquet of flowers for pick up",
+      "description": "Intent to order food for pick up",
       "fulfillmentActivity": {
         "type": "ReturnIntent"
       },
-      "name": "OrderFlowers",
+      "name": "OrderFood",
       "rejectionStatement": {
         "messages": [
           {
@@ -68,29 +68,29 @@
         ]
       },
       "sampleUtterances": [
-        "I would like to order some flowers",
-        "I would like to buy some flowers",
-        "I would like to pick up flowers",
-        "I would like to order flowers",
-        "I would like to buy flowers",
-        "Can I please get flowers",
-        "May I please get flowers",
+        "I would like to order some food",
+        "I would like to buy some food",
+        "I would like to pick up food",
+        "I would like to order food",
+        "I would like to buy food",
+        "Can I please get food",
+        "May I please get food",
         "I want to place an order",
-        "I want to order flowers",
-        "I want to buy flowers",
-        "May I order flowers",
-        "Can I order flowers",
-        "Can I buy flowers",
-        "Can I get flowers",
-        "May I get flowers",
-        "May I buy flowers",
+        "I want to order food",
+        "I want to buy food",
+        "May I order food",
+        "Can I order food",
+        "Can I buy food",
+        "Can I get food",
+        "May I get food",
+        "May I buy food",
         "I want to order",
-        "I want flowers",
+        "I want food",
         "place an order",
         "I want to buy",
         "make an order",
-        "order flowers",
-        "buy flowers",
+        "order food",
+        "buy food",
         "put an order",
         "can I order",
         "place order",
@@ -100,7 +100,7 @@
       ],
       "slots": [
         {
-          "description": "The time to pick up the flowers",
+          "description": "The time to pick up the food",
           "name": "PickupTime",
           "priority": 3,
           "sampleUtterances": [],
@@ -121,7 +121,7 @@
           }
         },
         {
-          "description": "The type of flowers to pick up",
+          "description": "The type of food to pick up",
           "name": "FlowerType",
           "priority": 1,
           "sampleUtterances": [
@@ -134,15 +134,15 @@
             "maxAttempts": 2,
             "messages": [
               {
-                "content": "What type of flowers would you like to order?",
+                "content": "What type of food would you like to order?",
                 "contentType": "PlainText"
               }
             ],
-            "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"imageUrl\":\"https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/flowers.jpeg\",\"subTitle\":\"Pick a Flower Type\",\"title\":\"Flower Types\",\"buttons\":[{\"text\":\"Roses\",\"value\":\"roses\"},{\"text\":\"Lilies\",\"value\":\"lilies\"},{\"text\":\"Tulips\",\"value\":\"tulips\"}]}]}"
+            "responseCard": "{\"version\":1,\"contentType\":\"application/vnd.amazonaws.card.generic\",\"genericAttachments\":[{\"imageUrl\":\"https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-lex-web-ui/artifacts/food.jpeg\",\"subTitle\":\"Pick a Flower Type\",\"title\":\"Flower Types\",\"buttons\":[{\"text\":\"Roses\",\"value\":\"roses\"},{\"text\":\"Lilies\",\"value\":\"lilies\"},{\"text\":\"Tulips\",\"value\":\"tulips\"}]}]}"
           }
         },
         {
-          "description": "The date to pick up the flowers",
+          "description": "The date to pick up the food",
           "name": "PickupDate",
           "priority": 2,
           "sampleUtterances": [],
@@ -167,19 +167,19 @@
   ],
   "slot_types": [
     {
-      "description": "Types of flowers to pick up",
+      "description": "Types of food to pick up",
       "enumerationValues": [
         {
-          "value": "tulips"
+          "value": "Pizza"
         },
         {
-          "value": "lilies"
+          "value": "Biriyani"
         },
         {
-          "value": "roses"
+          "value": "Buritu"
         }
       ],
-      "name": "FlowerTypes"
+      "name": "Chicken Korma"
     }
   ]
 }
