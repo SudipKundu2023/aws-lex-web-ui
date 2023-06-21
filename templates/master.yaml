@@ -8,7 +8,7 @@ Description: |
     It deploys:
         - S3 buckets to host the web application
         - CodeBuild project to build the configuration and deploy to S3
-        - Optional Lex Bot (based on OrderFlowers example)
+        - Optional Lex Bot (based on OrderFood example)
         - Optional Cognito Identity Pool for unauthenticated identities
         - Optional Lambda function to delete S3 buckets
         - CloudWatch Logs groups related to Lambda functions
@@ -280,13 +280,13 @@ Parameters:
     WebAppConfBotInitialText:
         Type: String
         Default: >
-            You can ask me for help ordering flowers. Just type "Buy
-            flowers" or click on the mic and say it.
+            You can ask me for help ordering Food. Just type "Order
+            Food" or click on the mic and say it.
         Description: First bot message displayed in the chatbot UI
 
     WebAppConfBotInitialSpeech:
         Type: String
-        Default: Say 'Buy Flowers' to get started.
+        Default: Say 'Order Food' to get started.
         Description: >
             Message spoken by bot when the microphone is first pressed in
             a conversation
@@ -323,7 +323,7 @@ Parameters:
 
     WebAppConfToolbarTitle:
         Type: String
-        Default: Order Flowers
+        Default: Order Food
         Description: Title displayed in the chatbot UI toolbar
 
     WebAppConfCname:
